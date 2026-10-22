@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Interactive Personal Portfolio dan Dashboard Website Muhammad Abidin - Mahasiswa Sistem Informasi UNP Kediri">
+    <title>Portfolio & Dashboard - Muhammad Abidin</title>
+
+    <!-- Bootstrap 5 CSS Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.com/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <<!-- Bootstrap 5 CSS (Link yang benar) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Animate.css (Cukup pasang di <head>) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body data-bs-theme="light">
+
+    <!-- Header & Navigation Bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#"><i class="bi bi-code-slash me-2"></i>Muhammad Abidin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Proyek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#calculator">Estimasi Biaya</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    </ul>
+                    <!-- Dark Mode Toggle Button -->
+                    <button class="btn btn-outline-light rounded-pill px-3" id="themeToggleBtn" type="button">
+                        <i class="bi bi-moon-stars-fill me-1" id="themeIcon"></i> <span id="themeText">Dark Mode</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-5 bg-body-tertiary border-bottom">
+            <div class="container py-4">
+                <div class="row align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-7 text-center text-lg-start mt-4 mt-lg-0">
+                        <span
+                            class="badge bg-success-subtle text-success mb-2 px-3 py-2 rounded-pill fw-semibold">Sistem
+                            Informasi - UNP Kediri</span>
+                        <h1 class="display-4 fw-bold mb-3 ">Halo, Saya <span class="text-success">Muhammad Abidin</span>
+                        </h1>
+                        <p class="lead text-secondary mb-4">Pengembang Web & Mahasiswa Sistem Informasi yang berfokus
+                            pada pengembangan aplikasi web interaktif, pemrosesan data, dan desain antarmuka yang
+                            modern.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="#portfolio" class="btn btn-success btn-lg px-4 me-md-2 fw-semibold"><i
+                                    class="bi bi-folder-fill me-2"></i>Lihat Proyek</a>
+                            <a href="#contact" class="btn btn-outline-secondary btn-lg px-4 fw-semibold"><i
+                                    class="bi bi-envelope-fill me-2"></i>Hubungi Saya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <div class="profile-avatar-wrapper position-relative d-inline-block">
+                            <img src="img/ft-profil.jpeg"
+                                onerror="this.src='https://via.placeholder.com/280?text=Muhammad+Abidin'"
+                                alt="Foto Muhammad Abidin"
+                                class="img-fluid rounded-circle shadow-lg border border-4 border-success"
+                                style="width: 280px; height: 280px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Aside -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Tentang Saya</h2>
+                    <p class="text-muted">Mengenal lebih dekat latar belakang dan keahlian saya</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Main About Info -->
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm h-100 p-4">
+                            <h3 class="h4 text-success mb-3"><i class="bi bi-person-badge me-2"></i>Biografi Singkat
+                            </h3>
+                            <p>Saya adalah mahasiswa Program Studi <strong>Sistem Informasi</strong> di
+                                <strong>Universitas Nusantara PGRI Kediri</strong>. Saya memiliki minat besar dalam
+                                dunia pengembangan perangkat lunak, pemrograman web interaktif, jaringan komputer, serta
+                                analisis data.
+                            </p>
+                            <p>Dalam proses pembelajaran, saya aktif mengeksplorasi pembuatan aplikasi antarmuka web
+                                yang responsif, integrasi logika JavaScript, serta perancangan sistem berbasis teknologi
+                                informasi.</p>
+
+                            <h4 class="h5 mt-3 mb-3">Kemampuan & Skill Set</h4>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge bg-success fs-6">HTML5 & Semantik</span>
+                                <span class="badge bg-secondary fs-6">CSS3 & Bootstrap</span>
+                                <span class="badge bg-success fs-6">JavaScript DOM</span>
+                                <span class="badge bg-info text-dark fs-6">Python & Pandas</span>
+                                <span class="badge bg-warning text-dark fs-6">Networking / MikroTik</span>
+                                <span class="badge bg-dark fs-6">Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aside Section: Quick Details & Stats -->
+                    <aside class="col-lg-4">
+                        <div class="card border-0 shadow-sm bg-body-tertiary h-100 p-4">
+                            <h3 class="h5 fw-bold mb-3"><i
+                                    class="bi bi-info-circle-fill text-success me-2"></i>Informasi Ringkas</h3>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent px-0"><strong>Status:</strong> Mahasiswa Aktif
+                                </li>
+                                <li class="list-group-item bg-transparent px-0"><strong>Program Studi:</strong> Sistem
+                                    Informasi</li>
+                                <li class="list-group-item bg-transparent px-0"><strong>Kampus:</strong> UNP Kediri</li>
+                                <li class="list-group-item bg-transparent px-0"><strong>Lokasi:</strong> Kediri, Jawa
+                                    Timur</li>
+                                <li class="list-group-item bg-transparent px-0"><strong>Fokus:</strong> Frontend & Web
+                                    Dev</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section -->
+        <section id="portfolio" class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Showcase Proyek</h2>
+                    <p class="text-muted">Kumpulan proyek dan karya yang telah dikembangkan</p>
+                </div>
+
+                <!-- Filter / Search Interactive Feature -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0"><i
+                                    class="bi bi-search text-muted"></i></span>
+                            <input type="text" id="projectSearchInput" class="form-control border-start-0"
+                                placeholder="Cari berdasarkan nama proyek atau teknologi...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects List Grid -->
+                <div class="row g-4" id="projectListGrid">
+                    <!-- Project Article 1 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-title="Sistem Reservasi Barbershop"
+                        data-tech="html css javascript web">
+                        <article class="card h-100 shadow-sm"
+                            style="border: 2px solid #00ff66; box-shadow: 0 0 10px #00ff66;">
+                            <img src="img/barbershop.png" class="card-img-top" alt="Sistem Barbershop"
+                                style="height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <div class="mb-2"><span class="badge bg-success">Web Booking</span></div>
+                                <h3 class="h5 card-title fw-bold">Sistem Booking & Antrean Barbershop</h3>
+                                <p class="card-text text-secondary">Aplikasi web pemesanan layanan dan manajemen antrean
+                                    untuk mempermudah pelanggan dalam memilih jadwal cukur rambut.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <small class="text-muted"><i class="bi bi-tags me-1"></i> HTML, CSS, JS</small>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Article 2 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-title="Kalkulator Pemrosesan Data Python"
+                        data-tech="python pandas data">
+                        <article class="card h-100 shadow-sm"
+                            style="border: 2px solid #00ff66; box-shadow: 0 0 10px #00ff66;">
+                            <div class="card-body">
+                                <img src="img/python.png" class="card-img-top" alt="Pengolahan Data Python"
+                                    style="height: 180px; object-fit: cover;">
+                                <div class="mb-2"><span class="badge bg-success">Data Script</span></div>
+                                <h3 class="h5 card-title fw-bold">Skrip Pengolahan Data & Visualisasi</h3>
+                                <p class="card-text text-secondary">Program pengolahan data otomatis menggunakan Python,
+                                    Pandas, dan Seaborn untuk membuat grafik laporan visual.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <small class="text-muted"><i class="bi bi-tags me-1"></i> Python, Pandas,
+                                    Matplotlib</small>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project Article 3 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-title="Simulasi Jaringan MikroTik CHR"
+                        data-tech="networking gns3 virtualbox mikrotik">
+                        <article class="card h-100 shadow-sm"
+                            style="border: 2px solid #00ff66; box-shadow: 0 0 10px #00ff66;">
+                            <div class="card-body">
+                                <img src="img/landing page.png" class="card-img-top" alt="Simulasi MikroTik"
+                                    style="height: 180px; object-fit: cover;">
+                                <div class="mb-2"><span class="badge bg-info text-dark">Jaringan</span></div>
+                                <h3 class="h5 card-title fw-bold">Konfigurasi Virtual Router MikroTik</h3>
+                                <p class="card-text text-secondary">Topologi dan simulasi manajemen jaringan virtual
+                                    router MikroTik CHR menggunakan GNS3 dan VirtualBox.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <small class="text-muted"><i class="bi bi-tags me-1"></i> MikroTik, VirtualBox,
+                                    GNS3</small>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Not Found Message -->
+                <div id="noProjectAlert" class="alert alert-warning text-center mt-4 d-none" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i> Proyek yang Anda cari tidak ditemukan.
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Cost Estimator Module / Calculator -->
+        <section id="calculator" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Estimasi Biaya Proyek Web</h2>
+                    <p class="text-muted">Modul kalkulator interaktif untuk menghitung estimasi pembuatan website</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow p-4">
+                            <form id="costEstimatorForm" onsubmit="return false;">
+                                <div class="mb-3">
+                                    <label for="projectType" class="form-label fw-bold">1. Pilih Jenis Website</label>
+                                    <select class="form-select" id="projectType" required>
+                                        <option value="500000">Landing Page / Simple Portfolio (Rp 500.000)</option>
+                                        <option value="1200000" selected>Web Profile & Dashboard Interaktif (Rp
+                                            1.200.000)</option>
+                                        <option value="2500000">Sistem Informasi / Web App Kompleks (Rp 2.500.000)
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="pageCount" class="form-label fw-bold">2. Jumlah Halaman (Tambahan Rp
+                                        100.000/halaman)</label>
+                                    <input type="number" class="form-control" id="pageCount" value="1" min="1" max="20"
+                                        required>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold">3. Fitur Tambahan (Opsional)</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input feature-checkbox" type="checkbox" value="300000"
+                                            id="featureResponsive" checked disabled>
+                                        <label class="form-check-label" for="featureResponsive">Desain Responsif Mobile
+                                            & Tablet (Bawaan - Gratis)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input feature-checkbox" type="checkbox" value="400000"
+                                            id="featureAuth">
+                                        <label class="form-check-label" for="featureAuth">Sistem Autentikasi / Login ( +
+                                            Rp 400.000 )</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input feature-checkbox" type="checkbox" value="600000"
+                                            id="featureDatabase">
+                                        <label class="form-check-label" for="featureDatabase">Integrasi Database / REST
+                                            API ( + Rp 600.000 )</label>
+                                    </div>
+                                </div>
+
+                                <div class="p-3 bg-body-tertiary rounded border text-center mb-3">
+                                    <h4 class="h6 text-muted mb-1">Total Estimasi Biaya:</h4>
+                                    <p class="display-6 fw-bold text-success mb-0" id="totalPriceResult">Rp 1.200.000
+                                    </p>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="button" id="btnCalculate" class="btn btn-success fw-semibold"><i
+                                            class="bi bi-calculator me-2"></i>Hitung Ulang Estimasi</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form Validation -->
+        <section id="contact" class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Hubungi Saya</h2>
+                    <p class="text-muted">Kirimkan pesan atau penawaran kerja sama melalui formulir di bawah ini</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm p-4">
+                            <!-- Alert Notification JS Placeholder -->
+                            <div id="contactAlert" class="d-none alert alert-dismissible fade show" role="alert">
+                                <span id="contactAlertText"></span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label fw-bold">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="contactName"
+                                        placeholder="Masukkan nama Anda" required>
+                                    <div class="invalid-feedback">Nama lengkap wajib diisi.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label fw-bold">Alamat Email</label>
+                                    <input type="email" class="form-control" id="contactEmail"
+                                        placeholder="nama@email.com" required>
+                                    <div class="invalid-feedback">Silakan masukkan email yang valid.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label fw-bold">Subjek Pesan</label>
+                                    <input type="text" class="form-control" id="contactSubject"
+                                        placeholder="Subjek pesan Anda" required>
+                                    <div class="invalid-feedback">Subjek pesan tidak boleh kosong.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label fw-bold">Isi Pesan</label>
+                                    <textarea class="form-control" id="contactMessage" rows="4"
+                                        placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                                    <div class="invalid-feedback">Pesan tidak boleh kosong (minimal 10 karakter).</div>
+                                </div>
+                                <button type="submit" class="btn btn-success fw-semibold px-4"><i
+                                        class="bi bi-send-fill me-2"></i>Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1">Muhammad Abidin</h5>
+                    <p class="small text-white-50 mb-0">UTS Pemrograman Web - Program Studi Sistem Informasi UNP Kediri
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://github.com" target="_blank" class="text-white me-3 fs-5"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="text-white me-3 fs-5"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="mailto:abidin@example.com" class="text-white fs-5"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Muhammad Abidin. Hak Cipta Dilindungi Undang-Undang.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Custom External JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
