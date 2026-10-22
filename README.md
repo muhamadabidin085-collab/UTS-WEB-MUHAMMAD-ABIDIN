@@ -11,8 +11,8 @@
 ---
 
 ## 🔗 Tautan Penting
-- **URL Repository GitHub:** [https://github.com/USERNAME-ANDA/UTS-WEB-MUHAMMAD-ABIDIN](https://github.com/USERNAME-ANDA/UTS-WEB-MUHAMMAD-ABIDIN)
-- **URL Live Website (GitHub Pages):** [https://USERNAME-ANDA.github.io/UTS-WEB-MUHAMMAD-ABIDIN/](https://USERNAME-ANDA.github.io/UTS-WEB-MUHAMMAD-ABIDIN/)
+- **URL Repository GitHub:** [https://github.com/muhamadabidin085-collab/UTS-WEB-MUHAMMAD-ABIDIN]
+- **URL Live Website (GitHub Pages):** [https://muhamadabidin085-collab.github.io/UTS-WEB-MUHAMMAD-ABIDIN/]
 
 ---
 
